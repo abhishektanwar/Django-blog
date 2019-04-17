@@ -1,0 +1,12 @@
+{% extends "blog/base.html" %}
+    
+{% block content %}
+    {% for post in posts %}
+        <h1>{{post.author}}</h1><br>
+        <h1>{{post.title}}</h1><br>
+        <h1>{{post.author}}</h1><br>
+        <h1>{{post.date_posted}}</h1><br>
+    {% endfor %}
+
+    <button type="submit" class="btn btn-success btn-sm">submit</button>
+{% endblock content %}
